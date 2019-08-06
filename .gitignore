@@ -1,0 +1,9 @@
+# Project related
+.env
+
+# yarn
+node_modules/
+
+# logs and zips
+*.log
+*.gz
