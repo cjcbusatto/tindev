@@ -4,7 +4,7 @@
 
 Tindev is an application developed during the Omnistack Week 8 organized by [Rocketseat](https://rocketseat.com.br).
 
-The app uses the Tinder matching idea applied for developers, based on their Github accounts.
+The app uses the Tinder matching idea but applied for development scenario, where developers can find their next partners based on their Github accounts.
 
 ## Backend
 
@@ -21,6 +21,28 @@ $ yarn install
 $ cd backend
 $ yarn dev
 ```
+
+## Frontend
+
+### Installation
+
+```bash
+$ cd frontend
+$ yarn install
+```
+
+### Usage
+
+```bash
+$ cd frontend
+$ yarn dev
+```
+
+## Mobile
+
+### Installation
+
+### Usage
 
 ## LICENSE
 

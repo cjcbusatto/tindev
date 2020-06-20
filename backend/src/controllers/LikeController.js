@@ -14,7 +14,15 @@ module.exports = {
         }
 
         if (likedDeveloper.likes.includes(loggedDeveloper._id)) {
-            console.log('Match!');
+            const loggedDeveloperSocket = req.connectedUsers[developerId];
+            const likedDeveloperSocket = req.connectedUsers[developerLikedId];
+
+            if (loggedDeveloperSocket) {
+                req.io.to(loggedDeveloperSocket).emit('match', likedDeveloper);
+            }
+            if (likedDeveloperSocket) {
+                req.io.to(likedDeveloperSocket).emit('match', loggedDeveloper);
+            }
         }
 
         loggedDeveloper.likes.push(likedDeveloper._id);

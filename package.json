@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "nyc": "^14.1.1"
+  }
+}

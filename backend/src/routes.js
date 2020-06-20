@@ -4,8 +4,8 @@ const DeveloperController = require('./controllers/DeveloperController');
 const LikeController = require('./controllers/LikeController');
 const DislikeController = require('./controllers/DislikeController');
 
-routes.get('/devs', DeveloperController.index);
-routes.post('/devs', DeveloperController.store);
-routes.post('/devs/:id/likes', LikeController.store);
-routes.post('/devs/:id/dislikes', DislikeController.store);
+routes.get('/developers', DeveloperController.index);
+routes.post('/developers', DeveloperController.store);
+routes.post('/developers/:id/likes', LikeController.store);
+routes.post('/developers/:id/dislikes', DislikeController.store);
 module.exports = routes;
